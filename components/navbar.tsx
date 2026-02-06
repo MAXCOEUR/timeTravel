@@ -34,6 +34,12 @@ export function Navbar() {
         {/* Desktop Nav */}
         <div className="hidden items-center gap-8 md:flex">
           <a
+            href="#quiz"
+            className="relative text-sm tracking-widest uppercase text-muted-foreground transition-colors hover:text-primary after:absolute after:-bottom-1 after:left-0 after:h-px after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
+          >
+            Quiz
+          </a>
+          <a
             href="#agence"
             className="relative text-sm tracking-widest uppercase text-muted-foreground transition-colors hover:text-primary after:absolute after:-bottom-1 after:left-0 after:h-px after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
           >
@@ -71,6 +77,13 @@ export function Navbar() {
         }`}
       >
         <div className="flex flex-col gap-4 px-6 py-6">
+          <a
+            href="#quiz"
+            onClick={() => setIsOpen(false)}
+            className="text-sm tracking-widest uppercase text-muted-foreground transition-colors hover:text-primary"
+          >
+            Quiz
+          </a>
           <a
             href="#agence"
             onClick={() => setIsOpen(false)}

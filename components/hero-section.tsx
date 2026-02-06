@@ -39,7 +39,7 @@ export function HeroSection() {
           poster="/images/paris-1889.jpg"
         >
           <source
-            src="https://videos.pexels.com/video-files/3129671/3129671-uhd_2560_1440_30fps.mp4"
+            src="/videos/video 3.mp4"
             type="video/mp4"
           />
         </video>

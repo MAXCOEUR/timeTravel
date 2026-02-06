@@ -1,3 +1,4 @@
+import { createMistral } from '@ai-sdk/mistral';
 import {
   consumeStream,
   convertToModelMessages,
@@ -5,13 +6,19 @@ import {
   type UIMessage,
 } from "ai"
 
+// 1. Initialise Mistral avec ta clé API (stockée dans .env.local)
+const mistral = createMistral({
+  apiKey: process.env.MISTRAL_API_KEY,
+});
+
 export const maxDuration = 30
 
 export async function POST(req: Request) {
   const { messages }: { messages: UIMessage[] } = await req.json()
 
   const result = streamText({
-    model: "mistral/mistral-small-latest",
+    // 2. Utilise la fonction mistral() ici
+    model: mistral("mistral-small-latest"), 
     system: `Tu es l'Assistant Chrono de TimeTravel Agency, une agence de voyages temporels de luxe.
 Tu reponds toujours en francais avec un ton elegant, raffine et professionnel.
 Tu connais parfaitement les destinations suivantes :

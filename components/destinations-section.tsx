@@ -12,7 +12,7 @@ const destinations = [
     subtitle: "Belle Epoque",
     description:
       "Assistez au devoilement de la Tour Eiffel lors de l'Exposition Universelle. Dinez dans les salons parisiens exclusifs et promenez-vous le long des boulevards eclaires au gaz.",
-    image: "/images/paris-1889.jpg",
+    image: "/images/Paris 1-1.png",
     era: "XIXe Siecle",
     duration: "3-7 Jours",
   },
@@ -21,7 +21,7 @@ const destinations = [
     subtitle: "Dinosaures & Nature",
     description:
       "Marchez parmi les titans du monde ancien dans un biodome protege. Decouvrez une nature intacte, 66 millions d'annees avant la civilisation.",
-    image: "/images/cretaceous.jpg",
+    image: "/images/cetacé 1-1.png",
     era: "66 Millions av. J.-C.",
     duration: "1-5 Jours",
   },
@@ -30,7 +30,7 @@ const destinations = [
     subtitle: "Art de la Renaissance",
     description:
       "Rencontrez les maitres de la Renaissance. Assistez a la revelation du David par Michel-Ange et profitez de visites privees des collections Medicis.",
-    image: "/images/florence-1504.jpg",
+    image: "/images/florance 1-1.png",
     era: "XVIe Siecle",
     duration: "3-10 Jours",
   },
